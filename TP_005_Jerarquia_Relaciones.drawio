@@ -1,114 +1,29 @@
 <mxfile host="app.diagrams.net" modified="2026-05-25" version="1.0">
-  <diagram id="TP_005_Hierarchy" name="TP_005 Jerarquía y Relaciones">
-    <mxGraphModel dx="1400" dy="1200" grid="1">
+  <diagram id="TP_005_Complete" name="TP_005 Jerarquía Completa">
+    <mxGraphModel dx="1400" dy="1600" grid="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         
         <!-- TÍTULO -->
-        <mxCell id="title" value="TP_005: JERARQUÍA COMPLETA Y RELACIONES ENTRE OBJETOS" style="text;html=1;fillColor=#0066CC;fillOpacity=100;align=center;fontColor=#FFFFFF;fontSize=14;fontStyle=1;padding=10;" vertex="1" parent="1">
-          <mxGeometry x="100" y="20" width="1000" height="50" as="geometry" />
+        <mxCell id="title" value="TP_005: JERARQUÍA COMPLETA Y FLUJO DE DATOS" style="text;html=1;fillColor=#0066CC;fillOpacity=100;align=center;fontColor=#FFFFFF;fontSize=14;fontStyle=1;padding=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="10" width="1100" height="50" as="geometry" />
         </mxCell>
         
-        <!-- ============ JERARQUÍA VISUAL ============ -->
-        <mxCell id="hierarchy_title" value="ESTRUCTURA JERÁRQUICA" style="text;html=1;fillColor=#FF8C00;fillOpacity=100;align=center;fontColor=#FFFFFF;fontSize=12;fontStyle=1;padding=5;" vertex="1" parent="1">
-          <mxGeometry x="100" y="90" width="1000" height="25" as="geometry" />
+        <!-- NIVEL 0 -->
+        <mxCell id="n0_title" value="NIVEL 0: TALENTPROFILE (PADRE)" style="text;html=1;fillColor=#0066CC;fillOpacity=100;align=center;fontColor=#FFFFFF;fontSize=11;fontStyle=1;padding=3;" vertex="1" parent="1">
+          <mxGeometry x="50" y="70" width="1100" height="20" as="geometry" />
         </mxCell>
         
-        <!-- NIVEL 0: TALENTPROFILE (PADRE) -->
-        <mxCell id="nivel0" value="NIVEL 0: TALENTPROFILE (PADRE)&#xa;&#xa;TP_005: MEDICO CLINICO&#xa;ProfileCode: TP_005&#xa;ProfileUsageCode: M (Model)&#xa;ProfileStatusCode: A (Active)&#xa;ProfileTypeCode: POSITION" style="rounded=1;fillColor=#E8F4F8;strokeColor=#0066CC;strokeWidth=3;fontSize=9;align=center;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="140" width="400" height="100" as="geometry" />
+        <mxCell id="tp005" value="TP_005: MEDICO CLINICO&#xa;ProfileCode|ProfileUsageCode|ProfileStatusCode|ProfileTypeCode&#xa;TP_005|M|A|POSITION" style="rounded=1;fillColor=#D6EAF8;strokeColor=#0066CC;strokeWidth=3;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="300" height="80" as="geometry" />
         </mxCell>
         
-        <!-- NIVEL 1: HIJOS DE TP_005 -->
-        <mxCell id="nivel1_title" value="NIVEL 1: HIJOS DIRECTOS DE TP_005 (3 TIPOS)" style="text;html=1;fillColor=#9933FF;fillOpacity=100;align=center;fontColor=#FFFFFF;fontSize=11;fontStyle=1;padding=3;" vertex="1" parent="1">
-          <mxGeometry x="100" y="270" width="1000" height="20" as="geometry" />
+        <!-- NIVEL 1 -->
+        <mxCell id="n1_title" value="NIVEL 1: HIJOS DIRECTOS (3 OBJETOS)" style="text;html=1;fillColor=#9933FF;fillOpacity=100;align=center;fontColor=#FFFFFF;fontSize=11;fontStyle=1;padding=3;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="1100" height="20" as="geometry" />
         </mxCell>
         
-        <!-- ProfileItem -->
-        <mxCell id="nivel1_pi" value="ProfileItem (LOS REQUISITOS)&#xa;ProfileCode: TP_005&#xa;ContentItem: 11 registros&#xa;&#xa;DATOS ADJUNTOS:&#xa;• ContentItemId (de ContentItem)&#xa;• ContentTypeId (103,104,106)&#xa;• RatingLevelId (si aplica)&#xa;• RatingModelCode (PROFICIENCY)&#xa;• Mandatory: Y/N&#xa;• DateFrom/DateTo" style="rounded=1;fillColor=#FFF4E6;strokeColor=#FF8C00;strokeWidth=2;fontSize=8;align=left;" vertex="1" parent="1">
-          <mxGeometry x="100" y="310" width="300" height="120" as="geometry" />
-        </mxCell>
-        
-        <!-- ProfileKeyword -->
-        <mxCell id="nivel1_pk" value="ProfileKeyword (BUSQUEDA/DOCUMENTACION)&#xa;ProfileCode: TP_005&#xa;KeywordType: AOE/AOI&#xa;Keywords: 12 strings&#xa;&#xa;DATOS:&#xa;• AOE: 6 palabras clave&#xa;• AOI: 6 palabras clave&#xa;• Solo TEXTO (no IDs)&#xa;• Para reporting y match" style="rounded=1;fillColor=#E8F4F8;strokeColor=#0066CC;strokeWidth=2;fontSize=8;align=left;" vertex="1" parent="1">
-          <mxGeometry x="450" y="310" width="300" height="120" as="geometry" />
-        </mxCell>
-        
-        <!-- ProfileRelation -->
-        <mxCell id="nivel1_pr" value="ProfileRelation (VINCULACION)&#xa;ProfileCode: TP_005&#xy;RelationCode: POSITION&#xa;PositionCode: INS_POS_001&#xy;&#xa;DATOS:&#xa;• BusinessUnitName: COMMON&#xa;• ObjectEffectiveStartDate: 2026/01/01&#xa;• Conecta a POSITION" style="rounded=1;fillColor=#E6FFE6;strokeColor=#00AA00;strokeWidth=2;fontSize=8;align=left;" vertex="1" parent="1">
-          <mxGeometry x="800" y="310" width="300" height="120" as="geometry" />
-        </mxCell>
-        
-        <!-- Flechas del padre a hijos -->
-        <mxCell id="arrow_pi_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0066CC;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="nivel0" target="nivel1_pi">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow_pk_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0066CC;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="nivel0" target="nivel1_pk">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow_pr_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0066CC;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="nivel0" target="nivel1_pr">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <!-- NIVEL 2: LOS DATOS ESPECÍFICOS DE PROFILEITEM -->
-        <mxCell id="nivel2_title" value="NIVEL 2: LOS 11 PROFILEITEM ESPECÍFICOS (ADJUNTOS A ProfileItem)" style="text;html=1;fillColor=#FF6B6B;fillOpacity=100;align=center;fontColor=#FFFFFF;fontSize=11;fontStyle=1;padding=3;" vertex="1" parent="1">
-          <mxGeometry x="100" y="460" width="1000" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Educación Items -->
-        <mxCell id="pi_edu_items" value="📚 EDUCACIÓN (3)&#xa;&#xa;PI_001: Licenciatura&#xa;  ContentItemId: 300000005434275&#xa;  ContentTypeId: 106&#xa;  Mandatory: Y&#xa;&#xa;PI_002: Especialización&#xa;  ContentItemId: 300000005434258&#xa;  ContentTypeId: 106&#xa;  Mandatory: Y&#xa;&#xa;PI_003: Residencia Médica&#xa;  ContentItemId: 300000005434280&#xy;  ContentTypeId: 106&#xa;  Mandatory: Y" style="rounded=1;fillColor=#FFF9E6;strokeColor=#FF8C00;strokeWidth=2;fontSize=7;align=left;" vertex="1" parent="1">
-          <mxGeometry x="100" y="500" width="230" height="130" as="geometry" />
-        </mxCell>
-        
-        <!-- Licencias Items -->
-        <mxCell id="pi_lic_items" value="🏛️ LICENCIAS (2)&#xa;&#xa;PI_004: Licencia Médica&#xa;  ContentItemId: 300000005434420&#xa;  ContentTypeId: 103&#xa;  Mandatory: Y&#xa;&#xa;PI_005: ACLS Cert.&#xa;  ContentItemId: 300000005434410&#xa;  ContentTypeId: 103&#xa;  Mandatory: Y" style="rounded=1;fillColor=#FFF9E6;strokeColor=#FF8C00;strokeWidth=2;fontSize=7;align=left;" vertex="1" parent="1">
-          <mxGeometry x="360" y="500" width="230" height="100" as="geometry" />
-        </mxCell>
-        
-        <!-- Competencias Items -->
-        <mxCell id="pi_comp_items" value="⚙️ COMPETENCIAS (6)&#xa;&#xa;PI_006: Diagnóstico - ADVANCED&#xa;  ContentItemId: 300000005434137&#xa;  RatingLevelId: 300000005235244&#xa;  Mandatory: Y&#xy;PI_007: Atención - ADVANCED&#xa;  ContentItemId: 300000005434240&#xa;  RatingLevelId: 300000005235244&#xa;  Mandatory: Y&#xy;PI_008: Crítico - INTERMEDIATE&#xa;  ContentItemId: 300000005434251&#xa;  RatingLevelId: 300000005235243&#xa;  Mandatory: Y&#xy;PI_009: Farmacología - INTERMEDIATE&#xa;  ContentItemId: 300000005434264&#xa;  RatingLevelId: 300000005235243&#xa;  Mandatory: Y&#xy;PI_010: Comunicación - INTERMEDIATE&#xa;  ContentItemId: 300000005434249&#xa;  RatingLevelId: 300000005235243&#xa;  Mandatory: Y&#xy;PI_011: Equipo - INTERMEDIATE&#xa;  ContentItemId: 300000005434286&#xa;  RatingLevelId: 300000005235243&#xa;  Mandatory: N" style="rounded=1;fillColor=#FFF9E6;strokeColor=#FF8C00;strokeWidth=2;fontSize=6;align=left;" vertex="1" parent="1">
-          <mxGeometry x="620" y="500" width="280" height="180" as="geometry" />
-        </mxCell>
-        
-        <!-- Flechas a items específicos -->
-        <mxCell id="arrow_edu" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#FF8C00;strokeWidth=1;endArrow=classic;endFill=1;dashed=1;" edge="1" parent="1" source="nivel1_pi" target="pi_edu_items">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow_lic" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#FF8C00;strokeWidth=1;endArrow=classic;endFill=1;dashed=1;" edge="1" parent="1" source="nivel1_pi" target="pi_lic_items">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow_comp" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#FF8C00;strokeWidth=1;endArrow=classic;endFill=1;dashed=1;" edge="1" parent="1" source="nivel1_pi" target="pi_comp_items">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        
-        <!-- ============ NIVEL 3: CONTENTITEM FUENTE ============ -->
-        <mxCell id="nivel3_title" value="NIVEL 3: CONTENTITEM (LA FUENTE - DE DONDE VIENEN LOS DATOS)" style="text;html=1;fillColor=#CC0000;fillOpacity=100;align=center;fontColor=#FFFFFF;fontSize=11;fontStyle=1;padding=3;" vertex="1" parent="1">
-          <mxGeometry x="100" y="710" width="1000" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- ContentItem Educación -->
-        <mxCell id="ci_edu" value="ContentItem: EDUCACIÓN&#xa;&#xa;COMP-001 (Licenciatura)&#xa;ID: 300000005434275&#xa;Name: Licenciatura&#xy;ContentTypeId: 106&#xy;&#xa;EDU-002 (Especialización)&#xa;ID: 300000005434258&#xy;ContentTypeId: 106&#xy;&#xa;EDU-003 (Residencia)&#xa;ID: 300000005434280&#xy;ContentTypeId: 106" style="rounded=1;fillColor=#FFCCCC;strokeColor=#CC0000;strokeWidth=2;fontSize=7;align=left;" vertex="1" parent="1">
-          <mxGeometry x="100" y="750" width="230" height="100" as="geometry" />
-        </mxCell>
-        
-        <!-- ContentItem Licencias -->
-        <mxCell id="ci_lic" value="ContentItem: LICENCIAS&#xa;&#xa;LIC-001 (Licencia Médica)&#xa;ID: 300000005434420&#xy;ContentTypeId: 103&#xy;&#xa;LIC-004 (ACLS)&#xa;ID: 300000005434410&#xy;ContentTypeId: 103" style="rounded=1;fillColor=#FFCCCC;strokeColor=#CC0000;strokeWidth=2;fontSize=7;align=left;" vertex="1" parent="1">
-          <mxGeometry x="360" y="750" width="230" height="80" as="geometry" />
-        </mxCell>
-        
-        <!-- ContentItem Competencias -->
-        <mxCell id="ci_comp" value="ContentItem: COMPETENCIAS&#xa;&#xa;COMP-001: Diagnóstico (300000005434137)&#xy;COMP-002: Atención (300000005434240)&#xy;COMP-003: Equipo (300000005434286)&#xy;COMP-004: Crítico (300000005434251)&#xy;COMP-005: Farmacología (300000005434264)&#xy;COMP-009: Comunicación (300000005434249)" style="rounded=1;fillColor=#FFCCCC;strokeColor=#CC0000;strokeWidth=2;fontSize=6;align=left;" vertex="1" parent="1">
-          <mxGeometry x="620" y="750" width="280" height="100" as="geometry" />
-        </mxCell>
-        
-        <!-- Flechas a ContentItem -->
-        <mxCell id="arrow_ci_edu" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=1;endArrow=classic;endFill=1;dashed=1;" edge="1" parent="1" source="pi_edu_items" target="ci_edu">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow_ci_lic" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=1;endArrow=classic;endFill=1;dashed=1;" edge="1" parent="1" source="pi_lic_items" target="ci_lic">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="arrow_ci_comp" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=1;endArrow=classic;endFill=1;dashed=1;" edge="1" parent="1" source="pi_comp_items" target="ci_comp">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="pi" value="PROFILEITEM (11 requisitos)&#xa;TP_005|Licenciatura|300000005434275|106|Y|||&#xa;TP_005|Especialización|300000005434258|106|Y|||&#xa;TP_005|Residencia|300000005434280|106|Y|||&#xa;TP_005|Lic.Médica|300000005434420|103|Y|||&#xa;TP_005|ACLS|300000005434410|103|Y|||&#xa;TP_005|Diagnóstico|300000005434137|104|Y|PROFICIENCY|ADVANCED|300000005235244&#xa;TP_005|Atención|300000005434240|104|Y|PROFICIENCY|ADVANCED|300000005235244&#xa;TP_005|Crítico|300000005434251|104|Y|PROFICIENCY|INTERMEDIATE|300000005235243&#xa;TP_005|Farmacología|300000005434264|104|Y|PROFICIENCY|INTERMEDIATE|300000005235243&#xa;TP_005|Comunicación|300000005434249|104|Y|PROFICIENCY|INTERMEDIATE|300000005235243&#xa;TP_005|Equipo|300000005434286|104|N|PROFICIENCY|INTERMEDIATE|300000005235243" style="rounded=1;fillColor=#FFF4E6;strokeColor=#FF8C00;strokeWidth=2;fontSize=7;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="240" width="350" height="160" as="geometry" />
         
