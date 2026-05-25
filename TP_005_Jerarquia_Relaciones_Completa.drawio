@@ -1,0 +1,132 @@
+<mxfile host="app.diagrams.net" modified="2026-05-25" version="1.0">
+  <diagram id="TP005Complete" name="TP_005 Completo">
+    <mxGraphModel dx="1600" dy="1800" grid="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="t" value="TP_005: TALENTPROFILE - JERARQUÍA Y RELACIONES COMPLETAS" style="text;html=1;fillColor=#0066CC;fontColor=#FFFFFF;fontSize=13;fontStyle=1;padding=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="100" y="20" width="1000" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- L0 -->
+        <mxCell id="l0" value="NIVEL 0: TALENTPROFILE" style="text;html=1;fillColor=#0066CC;fontColor=#FFFFFF;fontSize=10;fontStyle=1;padding=3;" vertex="1" parent="1">
+          <mxGeometry x="100" y="80" width="1000" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tp" value="TP_005&#xa;Medico Clinico&#xa;ProfileUsageCode: M" style="rounded=1;fillColor=#D6EAF8;strokeColor=#0066CC;strokeWidth=3;align=center;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="450" y="110" width="200" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- L1 -->
+        <mxCell id="l1" value="NIVEL 1: 3 OBJETOS HIJOS" style="text;html=1;fillColor=#9933FF;fontColor=#FFFFFF;fontSize=10;fontStyle=1;padding=3;" vertex="1" parent="1">
+          <mxGeometry x="100" y="200" width="1000" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pi_c" value="1. PROFILEITEM (11)" style="rounded=1;fillColor=#FFF4E6;strokeColor=#FF8C00;strokeWidth=2;align=center;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="100" y="240" width="250" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pk_c" value="2. PROFILEKEYWORD&#xa;AOE (6) + AOI (6)" style="rounded=1;fillColor=#E8F4F8;strokeColor=#0066CC;strokeWidth=2;align=center;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="425" y="240" width="250" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pr_c" value="3. PROFILERELATION&#xa;→ INS_POS_001" style="rounded=1;fillColor=#E6FFE6;strokeColor=#00AA00;strokeWidth=2;align=center;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="750" y="240" width="250" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="a1" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#0066CC;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="tp" target="pi_c">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#0066CC;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="tp" target="pk_c">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor=#0066CC;strokeWidth=2;endArrow=classic;" edge="1" parent="1" source="tp" target="pr_c">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- L2 PROFILEITEM -->
+        <mxCell id="l2" value="NIVEL 2: 11 PROFILEITEM DESGLOSADOS" style="text;html=1;fillColor=#FF6B6B;fontColor=#FFFFFF;fontSize=10;fontStyle=1;padding=3;" vertex="1" parent="1">
+          <mxGeometry x="100" y="320" width="1000" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="edu" value="EDUCACIÓN (3)&#xa;Licenciatura-300000005434275&#xa;Especialización-300000005434258&#xa;Residencia-300000005434280" style="rounded=1;fillColor=#FFF9E6;strokeColor=#FF8C00;strokeWidth=1;fontSize=7;align=left;" vertex="1" parent="1">
+          <mxGeometry x="100" y="360" width="280" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="lic" value="LICENCIAS (2)&#xa;Médica-300000005434420&#xa;ACLS-300000005434410" style="rounded=1;fillColor=#FFF9E6;strokeColor=#FF8C00;strokeWidth=1;fontSize=7;align=left;" vertex="1" parent="1">
+          <mxGeometry x="425" y="360" width="250" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="comp" value="COMPETENCIAS (6)&#xa;Diagnóstico-ADVANCED-300000005434137&#xa;Atención-ADVANCED-300000005434240&#xa;Crítico-INTERMEDIATE-300000005434251&#xa;Farmacología-INTERMEDIATE-300000005434264&#xa;Comunicación-INTERMEDIATE-300000005434249&#xa;Equipo-INTERMEDIATE-300000005434286" style="rounded=1;fillColor=#FFF9E6;strokeColor=#FF8C00;strokeWidth=1;fontSize=7;align=left;" vertex="1" parent="1">
+          <mxGeometry x="720" y="360" width="280" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="a4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor:#FF8C00;strokeWidth=1;dashed=1;endArrow=classic;" edge="1" parent="1" source="pi_c" target="edu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor:#FF8C00;strokeWidth=1;dashed=1;endArrow=classic;" edge="1" parent="1" source="pi_c" target="lic">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor:#FF8C00;strokeWidth=1;dashed=1;endArrow=classic;" edge="1" parent="1" source="pi_c" target="comp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- L3 CONTENTITEM -->
+        <mxCell id="l3" value="NIVEL 3: CONTENTITEM (FUENTE DE DATOS)" style="text;html=1;fillColor=#CC0000;fontColor=#FFFFFF;fontSize=10;fontStyle=1;padding=3;" vertex="1" parent="1">
+          <mxGeometry x="100" y="480" width="1000" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ci_edu" value="ContentItem EDUCACIÓN&#xa;EDU-002: 300000005434275&#xa;EDU-006: 300000005434258&#xa;EDU-009: 300000005434280&#xa;ContentTypeId: 106" style="rounded=1;fillColor=#FFCCCC;strokeColor=#CC0000;strokeWidth=1;fontSize=7;align=left;" vertex="1" parent="1">
+          <mxGeometry x="100" y="520" width="280" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ci_lic" value="ContentItem LICENCIAS&#xa;LIC-001: 300000005434420&#xa;LIC-004: 300000005434410&#xa;ContentTypeId: 103" style="rounded=1;fillColor=#FFCCCC;strokeColor=#CC0000;strokeWidth=1;fontSize=7;align=left;" vertex="1" parent="1">
+          <mxGeometry x="425" y="520" width="250" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="ci_comp" value="ContentItem COMPETENCIAS&#xa;COMP-001: 300000005434137&#xa;COMP-002: 300000005434240&#xa;COMP-004: 300000005434251&#xa;COMP-005: 300000005434264&#xa;COMP-009: 300000005434249&#xa;COMP-003: 300000005434286&#xa;ContentTypeId: 104" style="rounded=1;fillColor=#FFCCCC;strokeColor=#CC0000;strokeWidth=1;fontSize=7;align=left;" vertex="1" parent="1">
+          <mxGeometry x="720" y="520" width="280" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="a7" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor:#CC0000;strokeWidth=1;dashed=1;endArrow=classic;" edge="1" parent="1" source="edu" target="ci_edu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor:#CC0000;strokeWidth=1;dashed=1;endArrow=classic;" edge="1" parent="1" source="lic" target="ci_lic">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a9" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor:#CC0000;strokeWidth=1;dashed=1;endArrow=classic;" edge="1" parent="1" source="comp" target="ci_comp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- L4 POSITION -->
+        <mxCell id="l4" value="NIVEL 4: POSITION (DESTINO)" style="text;html=1;fillColor=#006633;fontColor=#FFFFFF;fontSize=10;fontStyle=1;padding=3;" vertex="1" parent="1">
+          <mxGeometry x="100" y="640" width="1000" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pos" value="INS_POS_001&#xa;Médico General Hospitalario&#xa;JobCode: INS_JOB_001&#xa;Ubicación: LOC001&#xa;Estado: APPROVED&#xa;Tipo: FULL_TIME" style="rounded=1;fillColor=#D6F5D6;strokeColor=#006633;strokeWidth=2;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="450" y="680" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="a10" value="ProfileRelation&#xa;requiere" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeColor:#00AA00;strokeWidth=2;endArrow=classic;fontSize=8;" edge="1" parent="1" source="pr_c" target="pos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- LEYENDA -->
+        <mxCell id="leg" value="LEYENDA DE FLUJO:&#xa;— Flecha sólida = Relación directa obligatoria&#xa;- - Flecha punteada = Referencia de datos&#xa;🔵 Azul = TalentProfile y búsqueda&#xa;🟠 Naranja = ProfileItem y requisitos&#xa;🔴 Rojo = ContentItem base&#xa;🟢 Verde = ProfileRelation y destino" style="text;html=1;fillColor=#FFFFCC;strokeColor=#CCCC00;strokeWidth=1;fontSize=8;align=left;padding=5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="800" width="1000" height="90" as="geometry" />
+        </mxCell>
+        
+        <!-- FLUJO COMPLETO -->
+        <mxCell id="flujo_title" value="FLUJO COMPLETO DE VALIDACIÓN CUANDO JUAN APLICA A INS_POS_001:" style="text;html=1;fillColor=#9933FF;fontColor=#FFFFFF;fontSize=10;fontStyle=1;padding=3;" vertex="1" parent="1">
+          <mxGeometry x="100" y="910" width="1000" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flujo" value="1️⃣ Sistema busca: ¿Qué perfil requiere INS_POS_001?&#xa;   → Consulta ProfileRelation&#xa;   → Respuesta: TP_005 (Médico Clínico)&#xa;&#xa;2️⃣ Sistema obtiene: ¿Qué necesita TP_005?&#xa;   → Consulta los 11 ProfileItem&#xa;   → Obtiene: 3 educación, 2 licencias, 6 competencias&#xa;&#xa;3️⃣ Sistema valida: ¿Juan cumple TP_005?&#xa;   → Verifica Person Talent Profile de Juan&#xa;   → ¿Licenciatura? ✓  ¿Especialización? ✓  ¿Residencia? ✓&#xa;   → ¿Licencia Médica? ✓  ¿ACLS? ✓&#xy;   → ¿Diagnóstico ADVANCED? → Valida nivel real de Juan&#xa;   → ¿Atención ADVANCED? → Valida nivel real de Juan&#xa;&#xa;4️⃣ Resultado:&#xa;   ✅ CUMPLE TODO → APROBADO para INS_POS_001&#xa;   ⚠️ CUMPLE PARCIAL → ELIGIBLE con Training Plan&#xa;   ❌ NO CUMPLE → Necesita educación/licencias primero" style="rounded=1;fillColor=#F0E6FF;strokeColor=#9933FF;strokeWidth=1;fontSize=8;align=left;padding=5;" vertex="1" parent="1">
+          <mxGeometry x="100" y="950" width="1000" height="180" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
