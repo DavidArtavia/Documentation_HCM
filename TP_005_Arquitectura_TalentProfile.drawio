@@ -1,0 +1,179 @@
+<mxfile host="app.diagrams.net" modified="2026-05-25" agent="5.0" etag="TP_005_Architecture" version="1.0">
+  <diagram id="TP_005_Architecture" name="TP_005 - Médico Clínico">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- TÍTULO -->
+        <mxCell id="title" value="TALENTPROFILE TP_005 - MÉDICO CLÍNICO" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="400" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- OBJETO PADRE: TALENTPROFILE -->
+        <mxCell id="tp_base" value="TALENTPROFILE&#xa;TP_005&#xa;Médico Clínico Hospitalario" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F4F8;strokeColor=#0066CC;strokeWidth=3;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="80" width="300" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- LÍNEA DIVISORIA -->
+        <mxCell id="line1" value="" style="line;strokeWidth=2;html=1;strokeColor=#CCCCCC;" edge="1" parent="1">
+          <mxGeometry x="0" y="200" width="1000" height="1" as="geometry" />
+        </mxCell>
+        
+        <!-- SECCIÓN: PROFILEITEM -->
+        <mxCell id="pi_title" value="PROFILEITEM (Requisitos)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="30" y="220" width="200" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- EDUCACIÓN -->
+        <mxCell id="pi_edu" value="EDUCACIÓN&#xa;(ContentTypeId: 106)&#xa;&#xa;✓ Licenciatura&#xa;✓ Especialización&#xa;✓ Residencia Médica" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;strokeWidth=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="30" y="260" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- LICENCIAS -->
+        <mxCell id="pi_lic" value="LICENCIAS&#xa;(ContentTypeId: 103)&#xa;&#xa;✓ Licencia Médica&#xa;✓ ACLS Certification" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;strokeWidth=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="240" y="260" width="180" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- COMPETENCIAS -->
+        <mxCell id="pi_comp" value="COMPETENCIAS&#xa;(ContentTypeId: 104)&#xa;&#xa;⭐ Diagnóstico Clínico - ADVANCED&#xa;⭐ Atención al Paciente - ADVANCED&#xa;◆ Cuidado Crítico - INTERMEDIATE&#xa;◆ Farmacología Clínica - INTERMEDIATE&#xa;◆ Comunicación Clínica - INTERMEDIATE&#xa;◇ Trabajo en Equipo - INTERMEDIATE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E6;strokeColor=#FF8C00;strokeWidth=2;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="450" y="260" width="220" height="130" as="geometry" />
+        </mxCell>
+        
+        <!-- Flechas desde TP a ProfileItems -->
+        <mxCell id="arrow_edu" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0066CC;strokeWidth=2;dashed=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="tp_base" target="pi_edu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow_lic" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0066CC;strokeWidth=2;dashed=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="tp_base" target="pi_lic">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow_comp" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0066CC;strokeWidth=2;dashed=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="tp_base" target="pi_comp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- SECCIÓN: PROFILEKEYWORD -->
+        <mxCell id="line2" value="" style="line;strokeWidth=2;html=1;strokeColor=#CCCCCC;" edge="1" parent="1">
+          <mxGeometry x="0" y="420" width="1000" height="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pk_title" value="PROFILEKEYWORD (Búsqueda y Documentación)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="30" y="440" width="300" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- AOE -->
+        <mxCell id="pk_aoe" value="AREAS OF EXPERTISE (AOE)&#xa;Lo que YA SABE&#xa;&#xa;• Diagnóstico Clínico&#xa;• Atención al Paciente&#xa;• Cuidado Crítico&#xa;• Comunicación Clínica&#xa;• Farmacología Clínica&#xa;• Trabajo en Equipo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F3FF;strokeColor=#0066CC;strokeWidth=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="30" y="480" width="220" height="130" as="geometry" />
+        </mxCell>
+        
+        <!-- AOI -->
+        <mxCell id="pk_aoi" value="AREAS OF INTEREST (AOI)&#xa;Lo que QUIERE APRENDER&#xa;&#xa;• Investigación Clínica&#xa;• Telemedicina&#xa;• Docencia Médica&#xa;• Innovación en Salud&#xa;• Gestión Sanitaria&#xa;• Medicina Basada en Evidencia" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6F3FF;strokeColor=#0066CC;strokeWidth=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="290" y="480" width="220" height="130" as="geometry" />
+        </mxCell>
+        
+        <!-- Flechas desde TP a ProfileKeywords -->
+        <mxCell id="arrow_aoe" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0066CC;strokeWidth=2;dashed=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="tp_base" target="pk_aoe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="arrow_aoi" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0066CC;strokeWidth=2;dashed=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="tp_base" target="pk_aoi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- SECCIÓN: PROFILERELATION -->
+        <mxCell id="line3" value="" style="line;strokeWidth=2;html=1;strokeColor=#CCCCCC;" edge="1" parent="1">
+          <mxGeometry x="0" y="650" width="1000" height="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="pr_title" value="PROFILERELATION (Vinculación a Posiciones)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="30" y="670" width="300" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- PROFILERELATION OBJETO -->
+        <mxCell id="pr_obj" value="PROFILERELATION&#xa;&#xa;ProfileCode: TP_005&#xa;RelationCode: POSITION&#xa;PositionCode: INS_POS_001&#xa;BusinessUnitName: COMMON&#xa;ObjectEffectiveStartDate: 2026/01/01&#xa;&#xa;SIGNIFICADO:&#xa;&quot;TP_005 se requiere para INS_POS_001&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6FFE6;strokeColor=#00AA00;strokeWidth=2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="30" y="710" width="280" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- POSITION DESTINO -->
+        <mxCell id="position_obj" value="POSITION&#xa;INS_POS_001&#xa;&#xa;Médico General&#xa;Hospitalario&#xa;&#xa;(En INS Servicios Médicos)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6E6;strokeColor=#CC0000;strokeWidth=2;fontSize=10;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="750" width="200" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- Flecha desde TP a ProfileRelation -->
+        <mxCell id="arrow_pr" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00AA00;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="tp_base" target="pr_obj">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Flecha desde ProfileRelation a Position -->
+        <mxCell id="arrow_position" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CC0000;strokeWidth=2;endArrow=classic;endFill=1;" edge="1" parent="1" source="pr_obj" target="position_obj">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- LEYENDA -->
+        <mxCell id="legend_title" value="LEYENDA" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="220" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend_solid" value="─── Flecha sólida = Relación obligatoria" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="650" y="250" width="300" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend_dash" value="╌╌╌ Flecha punteada = Relación descriptiva" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="650" y="275" width="300" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend_blue" value="🔵 Azul = TalentProfile y Keywords (búsqueda)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="650" y="300" width="300" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend_orange" value="🟠 Naranja = ProfileItem (requisitos)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="650" y="325" width="300" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend_green" value="🟢 Verde = ProfileRelation (vinculación)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="650" y="350" width="300" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend_red" value="🔴 Rojo = Position destino" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="650" y="375" width="300" height="15" as="geometry" />
+        </mxCell>
+        
+        <!-- FLUJO DE VALIDACIÓN -->
+        <mxCell id="flow_title" value="FLUJO DE VALIDACIÓN CUANDO JUAN APLICA A INS_POS_001" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="30" y="890" width="500" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow_step1" value="1️⃣ Sistema busca: ¿Qué perfil requiere INS_POS_001?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="30" y="920" width="400" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow_step2" value="2️⃣ ProfileRelation responde: TP_005" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="30" y="945" width="400" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow_step3" value="3️⃣ Sistema obtiene TP_005 y valida:" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="30" y="970" width="400" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow_step4" value="   ✓ ¿Tiene Licenciatura? ✓ ¿ACLS? ✓ ¿Diagnóstico ADVANCED?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=8;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="50" y="992" width="400" height="15" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow_step5" value="4️⃣ Si cumple todo: ✅ APROBADO para INS_POS_001" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=9;fontColor=#00AA00;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1015" width="400" height="15" as="geometry" />
+        </mxCell>
+        
+        <!-- NOTAS TÉCNICAS -->
+        <mxCell id="note_title" value="NOTAS TÉCNICAS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontStyle=1;fontColor=#0066CC;" vertex="1" parent="1">
+          <mxGeometry x="500" y="890" width="200" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="note1" value="• ContentTypeId 103 = Licencias&#xa;• ContentTypeId 104 = Competencias&#xa;• ContentTypeId 106 = Educación&#xa;• ⭐ = ADVANCED&#xa;• ◆ = INTERMEDIATE&#xa;• ◇ = NO OBLIGATORIO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=8;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="500" y="920" width="350" height="100" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
