@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net" modified="2026-05-25" version="1.0">
+  <diagram id="TP_005_Complete" name="TP_005 Arquitectura Detallada">
+    <mxGraphModel dx="1400" dy="1200" grid="1">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="title" value="TP_005: MEDICO CLINICO - ARQUITECTURA COMPLETA" style="text;html=1;fillColor=#0066CC;fillOpacity=100;align=center;fontColor=#FFFFFF;fontSize=14;fontStyle=1;padding=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="20" width="900" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s1" value="1. TALENTPROFILE TP_005&#xa;Es el TEMPLATE que define QUE REQUISITOS debe cumplir un Medico Clinico" style="rounded=1;fillColor=#E8F4F8;strokeColor=#0066CC;strokeWidth=2;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="90" width="900" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s2" value="2. PROFILEITEM - LOS REQUISITOS ESPECIFICOS&#xa;&#xa;EDUCACION (ContentTypeId: 106):&#xa;- Licenciatura (300000005434275)&#xa;- Especializacion (300000005434258)&#xa;- Residencia Medica (300000005434280)&#xa;&#xa;LICENCIAS (ContentTypeId: 103):&#xa;- Licencia Medica Nacional (300000005434420) - OBLIGATORIA&#xa;- ACLS Certification (300000005434410) - OBLIGATORIA&#xa;&#xa;COMPETENCIAS (ContentTypeId: 104) - CON RATING LEVELS:&#xa;⭐ ADVANCED (300000005235244):&#xa;  * Diagnostico Clinico (300000005434137) - OBLIGATORIO&#xa;  * Atencion al Paciente (300000005434240) - OBLIGATORIO&#xa;&#xa;◆ INTERMEDIATE (300000005235243):&#xa;  * Cuidado Critico (300000005434251) - OBLIGATORIO&#xa;  * Farmacologia Clinica (300000005434264) - OBLIGATORIO&#xa;  * Comunicacion Clinica (300000005434249) - OBLIGATORIO&#xa;&#xa;◇ INTERMEDIATE:&#xa;  * Trabajo en Equipo (300000005434286) - OPCIONAL&#xa;&#xa;POR QUE RATING LEVELS?&#xa;Porque no es igual tener BASIC que ADVANCED.&#xa;ADVANCED = Puede trabajar solo&#xa;INTERMEDIATE = Puede supervisar con autonomia&#xa;BASIC = Necesita supervision directa" style="rounded=1;fillColor=#FFF4E6;strokeColor=#FF8C00;strokeWidth=2;fontSize=8;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="170" width="900" height="260" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s3" value="3. PROFILEKEYWORD - BUSQUEDA Y DOCUMENTACION&#xa;&#xa;TU PREGUNTA: 'Por que ProfileKeyword si son caracteristicas del TRABAJADOR?'&#xa;RESPUESTA: En un MODEL profile (TP_005) son caracteristicas ESPERADAS del modelo.&#xa;En un PERSON profile (Juan Garcia) son caracteristicas REALES de Juan.&#xa;&#xa;AREAS OF EXPERTISE (AOE) - LO QUE YA SABE:&#xa;• Diagnostico Clinico&#xa;• Atencion al Paciente&#xa;• Cuidado Critico&#xa;• Comunicacion Clinica&#xa;• Farmacologia Clinica&#xa;• Trabajo en Equipo&#xa;&#xa;NOTA: Estos COINCIDEN con ProfileItem porque son lo ESPERADO&#xa;&#xa;AREAS OF INTEREST (AOI) - LO QUE QUIERE APRENDER:&#xa;• Investigacion Clinica&#xa;• Telemedicina&#xa;• Docencia Medica&#xa;• Innovacion en Salud&#xa;• Gestion Sanitaria&#xa;• Medicina Basada en Evidencia&#xa;&#xa;PARA QUE AOI EN UN MODELO?&#xa;Para PLANIFICACION DE CARRERA y SUCESION.&#xa;Identifica medicos con potencial de liderazgo" style="rounded=1;fillColor=#E8F4F8;strokeColor=#0066CC;strokeWidth=2;fontSize=8;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="450" width="900" height="240" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s4" value="4. PROFILERELATION - VINCULACION A POSICIONES&#xa;&#xa;TU PREGUNTA: 'Que papel cumplen las positions y por que vincular a 1, 2 o 3?'&#xa;RESPUESTA:&#xa;- 1 Posicion = TP_005 solo en 1 lugar&#xa;- 2 Posiciones = TP_005 en 2 lugares (MISMO tipo de perfil)&#xa;- 3 Posiciones = TP_005 en 3 lugares&#xa;&#xa;REGLA: Solo vincules a posiciones que requieran EXACTAMENTE el mismo perfil.&#xa;Un Medico DIFERENTE Enfermero DIFERENTE Farmaceutico (cada uno tiene su propio TP)&#xa;&#xa;OBJETO ACTUAL:&#xa;ProfileCode: TP_005&#xa;RelationCode: POSITION&#xa;PositionCode: INS_POS_001&#xa;BusinessUnitName: COMMON (Reutilizable en multiples BU)&#xa;ObjectEffectiveStartDate: 2026/01/01&#xa;&#xa;SIGNIFICADO:&#xa;'El perfil TP_005 (Medico Clinico) se requiere para la posicion INS_POS_001&#xa;(Medico General Hospitalario) desde 2026/01/01'" style="rounded=1;fillColor=#E6FFE6;strokeColor=#00AA00;strokeWidth=2;fontSize=8;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="710" width="900" height="200" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="s5" value="5. FLUJO DE VALIDACION CUANDO JUAN APLICA A INS_POS_001&#xa;&#xa;1️⃣ PASO 1: Sistema busca ProfileRelation&#xa;'¿Que perfil requiere INS_POS_001?'&#xa;RESPUESTA: TP_005 (Medico Clinico)&#xa;&#xa;2️⃣ PASO 2: Sistema obtiene ProfileItem de TP_005&#xa;'¿Que necesita TP_005?'&#xa;RESPUESTA: 11 requisitos (3 educacion, 2 licencias, 6 competencias)&#xa;&#xa;3️⃣ PASO 3: Sistema valida perfil de Juan contra TP_005&#xa;Verifica en PERSON TALENT PROFILE de Juan:&#xa;✓ ¿Licenciatura? SÍ (del Tecnologico)&#xa;✓ ¿Especializacion? SÍ (Medicina Interna)&#xa;✓ ¿Residencia? SÍ&#xa;✓ ¿Licencia Medica? SÍ&#xa;✓ ¿ACLS? SÍ&#xa;? ¿Diagnostico ADVANCED? → VALIDA NIVEL REAL&#xa;? ¿Atencion al Paciente ADVANCED? → VALIDA NIVEL REAL&#xa;&#xa;4️⃣ PASO 4: RESULTADO&#xa;ESCENARIO A - CUMPLE TODO: ✅ APROBADO&#xa;ESCENARIO B - CUMPLE PARCIAL: ⚠️ ELIGIBLE CON TRAINING PLAN&#xa;ESCENARIO C - NO CUMPLE: ❌ NO ELIGIBLE" style="rounded=1;fillColor=#F0E6FF;strokeColor=#9933FF;strokeWidth=2;fontSize=8;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="930" width="900" height="220" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="notes" value="NOTAS TECNICAS IMPORTANTES:&#xa;&#xa;• ContentTypeId 103 = Licencias&#xa;• ContentTypeId 104 = Competencias&#xa;• ContentTypeId 106 = Educacion&#xa;• RatingLevelId 300000005235241 = BASIC&#xa;• RatingLevelId 300000005235243 = INTERMEDIATE&#xa;• RatingLevelId 300000005235244 = ADVANCED&#xa;• Mandatory: Y = OBLIGATORIO | N = OPCIONAL&#xa;• SourceSystemOwner: INS (de donde vienen los datos)&#xa;• ObjectEffectiveStartDate: Fecha en que empieza a ser valido" style="rounded=1;fillColor=#FFFFCC;strokeColor=#CCCC00;strokeWidth=2;fontSize=8;align=left;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1170" width="900" height="120" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
